@@ -1,19 +1,62 @@
 <!DOCTYPE html>
-<html>
-  <head>
-	<meta name = "viewport" content = "width = device-width, initial-scale = 1.0, maximum-scale = 1.0, user-scalable = no">
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="style.css">
-	
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <title>Brenden Brusberg</title>
-  </head>
-
-  <div class = "container">
-	<p>Hey</p>
-   </div>
+<html lang="en">
+	<head>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+		<title>Brenden Brusberg</title>
+	</head>
+  
+	<body>
+		<div class="container-fluid" style = "background: #9BB6D1; padding: 20px;">
+			<header>
+				<div class="wrapper" style = "background: #9BB6D1;padding: 10px;">
+					<h1>Brenden Brusberg<h1>
+					<h3>My Personal Website<h3>
+				</div>
+			</header>
+			<nav role="navigation" style = "background: #9BB6D1;padding: 5px;" >
+				<ul class="nav nav-tabs"  style = "background: #9BB6D1;padding: 5px;">
+					<li class="active" ><a data-toggle="tab" href="#home">Home</a></li>
+					<li><a data-toggle="tab" href="#my_Projects">My Projects</a></li>
+					<li><a data-toggle="tab" href="#my_Code">My Code</a></li>
+					<li><a data-toggle="tab" href="#hobbies">Hobbies</a></li>
+					<li><a data-toggle="tab" href="#about_Me">About Me</a></li>
+					<li><a data-toggle="tab" href="#my_Resume">My Resume</a></li>
+					<li><a data-toggle="tab" href="#contact_Me">Contact Me</a></li>
+				</ul>
+			</nav>
+		</div>
+  
+		<div class="content">
+			<div class="tab-content">
+				<div id="#home" class="tab-pane fade in active">
+					<h3>Welcome To My Website</h3>
+					<p>It is currently under construction. I will be placing my resume, projects and other accomplishments on this website.</p>
+				</div>
+				<div id="#my_Projects" class="tab-pane fade" >
+					<p=h1>My Projects</h1>
+					<p>My Projects.d</p>
+				</div>
+				<div id="#my_Code" class="tab-pane fade">
+				</div>
+				<div id="#hobbies" class="tab-pane fade">
+				</div>
+				<div id="#about_Me" class="tab-pane fade">
+				</div>
+				<div id="#my_Resume" class="tab-pane fade">
+				</div>
+				<div id="#contact_Me" class="tab-pane fade">
+				</div>
+			</div>
+		</div>
+  </body>
+		
+  <script>
+		$('#myTab a').click(function (e) {
+     e.preventDefault()
+     $(this).tab('show')
+   })
+	</script>
 </html>
